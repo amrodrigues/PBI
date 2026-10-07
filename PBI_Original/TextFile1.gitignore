@@ -1,0 +1,10 @@
+	cat << 'EOF' > .gitignore
+bin/
+obj/
+.vs/
+.vscode/
+*.user
+*.suo
+*.csv
+sample_clubes.jsonl
+EOF
