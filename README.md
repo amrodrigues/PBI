@@ -16,19 +16,31 @@ API RESTful desenvolvida em .NET 8 (C#) para o gerenciamento de solicitações d
 ## 🏗️ Arquitetura e Estrutura da Solução
 
 O projeto segue uma estrutura baseada em camadas (DDD simplificado) para garantir separação de responsabilidades e código limpo:
-
+---
 Fiap.SolicitacoesDocs.Api/
+
 ├── Application/              # Casos de uso, DTOs e regras de negócio
+
 │   ├── Dtos/                 # Contratos de entrada e saída
+
 │   └── Services/             # Serviços da aplicação
+
 ├── Domain/                   # Entidades, Enums e Interfaces
+
 │   ├── Entities/             # Entidade Solicitacao
+
 │   ├── Enums/                # TipoDocumento e SituacaoSolicitacao
+
 │   └── Repositories/         # Interface do Repositório
+
 ├── Infrastructure/           # Persistência e repositórios concretos
+
 │   └── Repositories/         # Implementação InMemory
+
 ├── Controllers/              # Endpoints REST da API
+
 └── Program.cs                # Configuração de DI, Middlewares e Swagger
+
 
 ---
 
